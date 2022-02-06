@@ -12,7 +12,7 @@ const UserItem = ({user}) => {
 
 const UsersList = ({users}) => {
     return (
-        <table>
+        <table className="container mt-5 col-6">
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
