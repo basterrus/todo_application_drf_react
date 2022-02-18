@@ -6,7 +6,7 @@ from todoapp.models import Project, ToDo
 class Command(BaseCommand):
 
     def handle(self, *args, **options):
-        for item in range(5):
+        for item in range(10):
             mixer.blend(Project)
             mixer.blend(ToDo)
         print('Создано!')
