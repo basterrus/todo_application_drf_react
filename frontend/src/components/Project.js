@@ -7,8 +7,8 @@ const ProjectListItem = ({item}) => {
     return (
         <tr>
             <td>{item.id}</td>
-            <td>{item.name}</td>
-            <td>{item.repository}</td>
+            <td>{item.projectName}</td>
+            <td>{item.repositoryLink}</td>
             <td><Link to={link_to}>detail</Link></td>
         </tr>
     )
@@ -44,8 +44,8 @@ const ProjectDetail = ({getProjectId, item}) => {
     console.log(id)
     return (
         <div>
-            <h1>{item.name}</h1>
-            Repository: <a href={item.repository}>{item.repository}</a>
+            <h1>{item.projectName}</h1>
+            Repository: <a href={item.repositoryLink}>{item.repositoryLink}</a>
             <p></p>
             Users:
             <ol>
