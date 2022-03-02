@@ -5,10 +5,11 @@ const ToDoListItem = ({item}) => {
     return (
         <tr>
             <td>{item.id}</td>
-            <td>{item.text}</td>
-            <td>{item.create}</td>
+            <td>{item.description}</td>
+            <td>{item.createdAt}</td>
+            <td>{item.updatedAt}</td>
             <td>{item.project}</td>
-            <td>{item.creator}</td>
+            <td>{item.contentCreator}</td>
         </tr>
     )
 }
@@ -17,13 +18,16 @@ const ToDoList = ({items}) => {
     return (
         <table className="table">
             <tr>
-                <th>Id</th>
-                <th>Text</th>
-                <th>Create</th>
-                <th>Project</th>
-                <th>Creator</th>
+                <th>#</th>
+                <th>Описание</th>
+                <th>Создана</th>
+                <th>Обновлена</th>
+                <th>Проект</th>
+                <th>Создатель</th>
             </tr>
-            {items.map((item) => <ToDoListItem item={item} />)}
+
+            {items.map((item) => <ToDoListItem item={item}/>)}
+
         </table>
     )
 }

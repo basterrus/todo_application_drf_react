@@ -1,8 +1,5 @@
 import React from 'react'
-import {
-  Link,
-  useParams
-} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 
 
 const ProjectListItem = ({item}) => {
@@ -12,20 +9,20 @@ const ProjectListItem = ({item}) => {
             <td>{item.id}</td>
             <td>{item.name}</td>
             <td>{item.repository}</td>
-            <td><Link to={link_to}>Detail</Link></td>
+            <td><Link to={link_to}>detail</Link></td>
         </tr>
     )
 }
 
 const ProjectList = ({items}) => {
     return (
-        <table className="">
+        <table className="table">
 
             <tr>
                 <th>Id</th>
                 <th>Name</th>
                 <th>Repository</th>
-                <th></th>
+                <th>detail</th>
             </tr>
             {items.map((item) => <ProjectListItem item={item} />)}
         </table>
@@ -40,9 +37,9 @@ const ProjectUserItem = ({item}) => {
     )
 }
 
-const ProjectDetail = ({getProject, item}) => {
+const ProjectDetail = ({getProjectId, item}) => {
     let { id } = useParams();
-    getProject(id)
+    getProjectId(id)
     let users = item.users ? item.users : []
     console.log(id)
     return (
