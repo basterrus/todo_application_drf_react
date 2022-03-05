@@ -9,7 +9,7 @@ const ProjectListItem = ({item}) => {
             <td>{item.id}</td>
             <td>{item.projectName}</td>
             <td>{item.repositoryLink}</td>
-            <td><Link to={link_to}>detail</Link></td>
+            <td><Link to={link_to}>Подробнее</Link></td>
         </tr>
     )
 }
@@ -19,10 +19,10 @@ const ProjectList = ({items}) => {
         <table className="table">
 
             <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Repository</th>
-                <th>detail</th>
+                <th>#</th>
+                <th>Название</th>
+                <th>Ссылка на репозиторий</th>
+                <th>Подробнее</th>
             </tr>
             {items.map((item) => <ProjectListItem item={item} />)}
         </table>
@@ -45,9 +45,9 @@ const ProjectDetail = ({getProjectId, item}) => {
     return (
         <div>
             <h1>{item.projectName}</h1>
-            Repository: <a href={item.repositoryLink}>{item.repositoryLink}</a>
+            Ссылка на репозиторий: <a href={item.repositoryLink}>{item.repositoryLink}</a>
             <p></p>
-            Users:
+            Пользователь:
             <ol>
             {users.map((user) => <ProjectUserItem item={user} />)}
             </ol>
