@@ -10,7 +10,7 @@ import AuthForm from "./components/Auth";
 import NavMenu from "./components/Menu";
 
 
-const URL = 'http://127.0.0.1:8000/api/v1/'
+const URL = 'http://127.0.0.1:8000/api/'
 const fullUrl = (url) => `${URL}${url}`
 
 
