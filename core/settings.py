@@ -92,6 +92,18 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'todo',
+#         'PASSWORD': 'postgres',
+#         'USER': 'postgres',
+#         'HOST': 'db',
+#         'PORT': '5432'
+#
+#     }
+# }
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -164,7 +176,6 @@ REST_FRAMEWORK = {
     # 'PAGE_SIZE': 100,
     'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.QueryParameterVersioning'
 }
-
 
 GRAPHENE = {
     'SCHEMA': 'core.schema.schema'

@@ -12,8 +12,8 @@ class Project(models.Model):
 
 
 class ToDo(models.Model):
-    project = models.ForeignKey(Project, on_delete=models.PROTECT, verbose_name='Проект')
-    content_creator = models.ForeignKey(UserProfile, on_delete=models.PROTECT, verbose_name='Создатель')
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, verbose_name='Проект')
+    content_creator = models.ForeignKey(UserProfile, on_delete=models.CASCADE, verbose_name='Создатель')
     description = models.TextField(verbose_name='Описание проекта')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Последнее обновление')

@@ -3,7 +3,7 @@ import {Container, Nav, Navbar} from "react-bootstrap";
 
 export default function Footer() {
     return (
-        <>
+
             <Navbar bg="secondary" variant="dark" fixed="bottom">
 
                 <Container>
@@ -12,8 +12,5 @@ export default function Footer() {
                     </Nav>
                 </Container>
             </Navbar>
-
-        </>
-
     )
 }

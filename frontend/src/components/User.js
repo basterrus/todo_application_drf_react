@@ -20,6 +20,7 @@ const UsersList = ({users}) => {
             <th>Имя</th>
             <th>Фамилия</th>
             <th>Email</th>
+
             {users.map((user) => <UserItem user={user}/>)}
             </thead>
         </Table>
