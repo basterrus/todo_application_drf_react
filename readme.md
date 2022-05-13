@@ -28,7 +28,7 @@ ___
 ### Запуск проекта:
 Клонируйте репозиторий с помощью git `https://github.com/basterrus/todo_application_drf_react.git`
 
-Перейти в папку: `cd todo_application_drf_react`
+Перейти в папку: `cd todo_application_drf_react`      
 
 Создать и активировать виртуальное окружение Python.
 
