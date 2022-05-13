@@ -39,3 +39,6 @@ ___
 
 Перейти в папку: `cd todo_application_drf_react/frontend`       
 Команда для запуска приложения frontend: `npm start` страница автоматически откроется в браузере
+___
+
+![img](Screenshot_8.png)
