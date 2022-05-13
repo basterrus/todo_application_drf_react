@@ -14,7 +14,7 @@ import Search from "./components/Search";
 import SearchProjects from "./components/Search";
 
 
-const URL = 'http://127.0.0.1:8001/api/'
+const URL = 'http://127.0.0.1:8000/api/'
 const fullUrl = (url) => `${URL}${url}`
 
 
