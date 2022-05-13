@@ -8,7 +8,8 @@ ___
     * Реализован механизм классической авторизации через логин и пароль, выдача JWT токена после авторизации 
       и сохранение его в кеше браузера пользователя
     * Реализован механизм разграничения ролей по группам и по пользователям    
-    * Реализован механиз тестирования API через APITestCase (APIRequestFactory, APIRequestFactory, force_authenticate, APIClient)
+    * Реализован механиз тестирования API через APITestCase (APIRequestFactory, APIRequestFactory, 
+      force_authenticate, APIClient)
     * Реализован механизм версионирования API
     * Реализован вывод информации с backend через GraphQL с использованием библиотеки Graphene-Python
     * Реализована API документация  с использованием Swagger
