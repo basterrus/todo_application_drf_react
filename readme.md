@@ -1,7 +1,6 @@
 # Итоговый проект по курсу Django Rest Framework
 ### Проект представляет собой API сервис с выводом информации через React
-<img src="img/Screenshot_5.png" width="500" height="500">
-<img src="img/Screenshot_6.png" width="500" height="500">
+<img src="img/Screenshot_5.png" width="500" height="500 "> <img src="img/Screenshot_6.png" width="500" height="500">
 ___
 
 ### Функционал проекта:
